@@ -1,7 +1,7 @@
 import cv2
 import time
 
-
+mirror = True
 from util import get_limits
 
 color_dict = {
@@ -32,6 +32,10 @@ try:
         if not ret:
             # If a frame was not read, skip processing and continue reading from camera
             continue
+        # mirror the frame horizontally so view is like a mirror
+        if mirror:
+            frame = cv2.flip(frame, 1)
+
         # compute smoothed FPS
         current_time = time.time()
         dt = current_time - prev_time
