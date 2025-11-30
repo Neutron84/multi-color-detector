@@ -16,4 +16,4 @@ This project is a computer vision application built with Python and OpenCV that 
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/YOUR-USERNAME/Color-Detector.git](https://github.com/YOUR-USERNAME/Color-Detector.git)
+   git clone https://github.com/AbolfazlDargi/multi-color-detector.git
